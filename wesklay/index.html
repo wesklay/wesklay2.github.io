@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+
+<html ng-app="wesklay">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<link href="/styles/all.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<title>Wesklay Vinicius</title>
+	</head> 
+	
+
+<body ng-controller="mainController">
+		
+		<header>
+									
+				<img class="profile-picture" ng-src="{{foto}}">
+				
+				<h1>{{nome}}</h1>
+				<h3>{{cargo}}</h3>
+
+		</header>
+ 
+
+	<ng-view>  </ng-view>		
+
+		<footer>
+			Copyright &copy; Wesklay Vinicius {{email}} - 2017
+		</footer>
+
+		<!-- Libraries = local das minhas bibliotecas -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+	
+		<!-- Scripts = Scripts utilizados -->
+		<script src="scripts/app.js"> </script>
+
+		<script src="scripts/app.config.js"> </script>
+
+	</body>
+
+</html>
